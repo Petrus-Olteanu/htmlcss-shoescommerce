@@ -11,8 +11,9 @@ body{
 
 /*Utilities*/
 .container{
+    border: 1px solid orange;
     margin: 32px auto;
-    width: 800px;
+    width: 850px;
 }
 
 /*Column*/
@@ -25,11 +26,77 @@ body{
 .dimension-img{
     width: 250px;
     height: 250px;
+
 }
 /*Row*/
 .row{
-    display: block;
+    display: inline-block;
     border: 1px solid green;
     width: 250px;
     height: 100px;
 }
+
+/*Discount*/
+.discount{
+    display: inline-block;
+    width:50px;
+    height: 20px;
+    color:#fff;
+    background-color: red;
+    position: relative;
+    left: 0;
+    text-align: center;
+    font-size: 16px;
+}
+
+/*Eco*/
+.eco{
+    display: inline-block;
+    width:auto;
+    height: 20px;
+    color:#fff;
+    background-color: green;
+    position: relative;
+    text-align: center;
+    font-size: 16px;
+}
+
+/*Title*/
+.title{
+    position: relative;
+    top:15px;
+    font-size:16px;
+}
+
+/*Price*/
+.price{
+    position: relative;
+    top:15px;
+    font-size:15px;
+    color: red;
+}
+
+/*Delete*/
+.delete{
+    position:relative;
+    left:50px;
+    top:-2px;
+    font-size:15px;
+}
+/*button like*/
+.btn {
+    display:inline-block;
+    height: 40px;
+    width: 40px;
+    border-radius: 50%;
+    position: relative;
+    left:230px;
+    top:50px;    
+  }
+
+  .image-swap-1 img:hover{
+     width:300px; 
+    height:150px; 
+    background:url("./img/craighouse/craighouse_leather_tan_oh.jpg");
+    opacity: 0%;
+} 
