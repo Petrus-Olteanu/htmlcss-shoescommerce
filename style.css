@@ -11,7 +11,6 @@ body{
 
 /*Utilities*/
 .container{
-    border: 1px solid orange;
     margin: 32px auto;
     width: 850px;
 }
@@ -21,6 +20,7 @@ body{
     width: calc(100% / 3);
     margin: 0  -2px 30px;
     display: inline-block;
+    position: relative;
 }
 /*Class for dimension img*/
 .dimension-img{
@@ -31,7 +31,6 @@ body{
 /*Row*/
 .row{
     display: inline-block;
-    border: 1px solid green;
     width: 250px;
     height: 100px;
 }
@@ -79,7 +78,7 @@ body{
 /*Delete*/
 .delete{
     position:relative;
-    left:50px;
+    left:55px;
     top:-2px;
     font-size:15px;
 }
@@ -89,14 +88,20 @@ body{
     height: 40px;
     width: 40px;
     border-radius: 50%;
+    border: 1px solid #fff;
     position: relative;
     left:230px;
     top:50px;    
   }
-
-  .image-swap-1 img:hover{
-     width:300px; 
-    height:150px; 
-    background:url("./img/craighouse/craighouse_leather_tan_oh.jpg");
-    opacity: 0%;
-} 
+/*Hover image*/
+  .hover-img {
+    position: absolute;
+    top: 90px;
+    left: 0px;
+    opacity: 0;
+    width: 250px;
+    height:250px;
+  }
+  .hover-img:hover {
+    opacity: 1;
+  }
