@@ -1,3 +1,35 @@
+/* GENERAL */
 *{
-    
+    box-sizing: 0;
+    padding: 0;
+    margin: 0;
+}
+
+body{
+    background-color: #fff;
+}
+
+/*Utilities*/
+.container{
+    margin: 32px auto;
+    width: 800px;
+}
+
+/*Column*/
+.col{
+    width: calc(100% / 3);
+    margin: 0  -2px 30px;
+    display: inline-block;
+}
+/*Class for dimension img*/
+.dimension-img{
+    width: 250px;
+    height: 250px;
+}
+/*Row*/
+.row{
+    display: block;
+    border: 1px solid green;
+    width: 250px;
+    height: 100px;
 }
